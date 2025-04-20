@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Akansha Kaduskar - Web Developer & Data Analyst | Building Scalable & Data-Driven Solutions</title>
+
+    <meta name="description"
+        content="Akansha Kaduskar is an experienced Web Developer & Data Analyst specializing in frontend development, UI/UX design, SEO optimization, and data visualization. Building high-performance websites and data-driven solutions using Python, Java, JavaScript, React, and MySQL." />
+
+    <meta name="keywords"
+        content="Akansha Kaduskar, Web Developer, Data Analyst, Frontend Developer, Java Developer, Python Developer, JavaScript Developer, React Developer, MySQL, UI/UX Design, SEO Optimization, Data Visualization, Dash, Plotly, Web Development, Data Analytics, Software Development, API Integration, HTML, CSS, Java, Python, JavaScript, SQL, Digital Marketing, Performance Optimization, Frontend Engineering" />
+
+    <!-- Open Graph Meta Tags for Social Media Preview -->
+    <meta property="og:title"
+        content="Akansha Kaduskar | Web Developer & Data Analyst | Frontend, Java, Python, React, SEO" />
+
+    <meta property="og:description"
+        content="Explore the portfolio of Akansha Kaduskar, a seasoned Web Developer & Data Analyst specializing in frontend development, UI/UX design, SEO optimization, and data visualization. Skilled in Java, Python, React, JavaScript, and MySQL. Passionate about building high-performance websites and data-driven solutions." />
+
+    <meta property="og:image"
+        content="https://drive.google.com/file/d/1inKRmve_jCVgRIBYxryrVhRzkMa_ma3u/view?usp=sharing">
+
+    <!--After hosting provide the portfoli url here  -->
+    <!-- <meta property="og:url" content=""> -->
+
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Akansha Kaduskar - Web Developer & Data Analyst | Building Scalable & Data-Driven Solutions">
+    <meta name="twitter:description"
+        content="Akansha Kaduskar is an experienced Web Developer & Data Analyst specializing in frontend development, UI/UX design, SEO optimization, and data visualization. Building high-performance websites and data-driven solutions using Python, Java, JavaScript, React, and MySQL." />
+    <meta name="twitter:image" content="https://x.com/KaduskarAkansha">
+
+    <!-- Canonical Link -->
+    <!-- <link rel="canonical" href="https://pankaj-kumar-techie.github.io/"> -->
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- JSON-LD structured data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Akansha Kaduskar",
+            "jobTitle": "Software Engineer",
+            "url": "https://pankaj-kumar-techie.github.io/",
+            "sameAs": [
+                "https://github.com/pankaj-kumar-techie",
+                "https://www.linkedin.com/in/pankaj-kumar-techie",
+            ],
+            "email": "mailto:akanshakaduskar@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bhilia",
+                "addressRegion": "Chhattisgarh",
+                "addressCountry": "India"
+            },
+            "telephone": "+91-9926154707"
+        }
+    </script>
+    <style>
+        .portfolio-item .card {
+            position: relative;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            border-radius: 12px;
+            overflow: hidden;
+            background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.05);
+        }
+
+        /* Neon Glow Border */
+        .portfolio-item .card::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, #0ff 0%, #00f 100%);
+            border-radius: 14px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        /* Smooth Hover Lift & Glow */
+        .portfolio-item .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Activate Neon Glow on Hover */
+        .portfolio-item .card:hover::before {
+            opacity: 1;
+        }
+
+        /* Subtle Text Glow */
+        .portfolio-item .card-body {
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+            text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.3);
+        }
+
+        /* Background Light Reflection */
+        .portfolio-item .card::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 10%, transparent 70%);
+            transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out;
+            opacity: 0;
+        }
+
+        .portfolio-item .card:hover::after {
+            transform: rotate(30deg) translate(50%, 50%);
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <img src="assets/img/profile-pic-akku.png" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Akansha Kaduskar</a></h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://github.com/akanshakaduskar" class="github"><i class="bx bxl-github"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="https://www.linkedin.com/in/akansha-kaduskar-827693252/" class="linkedin"><i
+                            class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                    </li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+                            <span>Resume</span></a></li>
+                    <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-code-slash"></i>
+                            <span>Skills</span></a>
+                    </li>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                            <span>Projects</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                            <span>Services</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>Akansha Kaduskar</h1>
+            <p>I'm <span class="typed" data-typed-items="Software Engineer , Backend Engineer, Freelancer"></span></p>
+            <a href="assets\files\Resume_Akansha Kaduskar...pdf" class="btn btn-resume" download>
+                <i class="bi bi-file-earmark-arrow-down"></i> Download Resume
+            </a>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>About</h2>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <img src="assets/img/profile-pic-akku.png" class="img-fluid" alt="Profile Picture"
+                            style="max-width: 2000px; height: 400px;">
+                    </div>
+                    <div class="col-lg-8 pt-1 pt-lg-0 content" data-aos="fade-left">
+                        <h3>Software Developer | Frontend & Data Analytics Enthusiast</h3>
+                        <p class="fst-italic">
+                            <strong>Hey there!</strong> I’m <strong>Akansha Kaduskar</strong> , a <strong>Web Developer
+                                and Data Analyst</strong> who loves turning ideas into efficient, scalable, and
+                            user-friendly solutions. With 2.5+ years of experience,
+                            I’ve worked on everything from building interactive dashboards to developing dynamic web
+                            applications—all with the goal of making technology work smarter, not harder.
+                        </p>
+                        <p>My journey started with a passion for problem-solving and creativity, which led me to explore
+                            frontend development, data visualization, and backend integration.
+                            I enjoy working with Java, JavaScript, React, Python, Dash, and MySQL, crafting solutions
+                            that not only look good but also function seamlessly. Whether it's developing real-time data
+                            dashboards, debugging complex issues, or enhancing user experiences,
+                            I’m always up for a challenge.
+                        </p>
+                        <p>
+                            Beyond coding, I thrive in collaborative environments, love brainstorming innovative
+                            solutions, and believe in continuous learning.
+                            I’ve had the opportunity to work in financial service operations, where I honed my ability
+                            to troubleshoot, optimize workflows, and enhance customer experiences.
+                            Every project I take on is an opportunity to learn, grow, and make a meaningful impact.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+            <div class="container">
+
+                <div class="section-title d-flex justify-content-between align-items-center">
+                    <div class="title-text">
+                        <h2>Professional Resume</h2>
+                        <p>Explore my education and professional journey in the world of software engineering and
+                            development.</p>
+                    </div>
+                    <div class="resume-button">
+                        <a href="assets/files/Resume_Akansha Kaduskar...pdf" class="btn btn-primary" download>
+                            <i class="bi bi-file-earmark-arrow-down"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+
+                <h3 class="resume-title">Akansha Kaduskar</h3>
+                <h3>Summary</h3>
+                <p><em>I Passionate and solution-driven Software Developer with a knack for building intuitive,
+                        high-performing applications.
+                        I love turning complex problems into simple, efficient solutions using Java, JavaScript, React,
+                        Python, Dash, and MySQL.
+                        Whether it's debugging tricky issues, optimizing workflows, or creating data-driven
+                        applications, I thrive on challenges that push me to grow.
+                        I enjoy collaborating with teams, brainstorming ideas, and continuously learning to stay ahead
+                        in the ever-evolving world of technology.</em></p>
+                <p>Bhilai, Chhattisgarh, India | +91 9926154707 | <a
+                        href="mailto:akanshakaduskar@gmail.com">akanshakaduskar@gmail.com</a></p>
+
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <!-- <h3 class="resume-title">Summary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Akansha Kaduskar</h4>
+                            <p><em>I Passionate and solution-driven Software Developer with a knack for building intuitive, high-performing applications.
+                                   I love turning complex problems into simple, efficient solutions using Java, JavaScript, React, Python, Dash, and MySQL. 
+                                   Whether it's debugging tricky issues, optimizing workflows, or creating data-driven applications, I thrive on challenges that push me to grow. 
+                                   I enjoy collaborating with teams, brainstorming ideas, and continuously learning to stay ahead in the ever-evolving world of technology.</em></p>
+                            <ul>
+                                <li>Bhilai, Chhattisgarh, India</li>
+                                <li>+91 9926154707</li>
+                                <li>akanshakaduskar@gmail.com</li>
+                            </ul>
+                        </div> -->
+
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Technology - Information Technology</h4>
+                            <h5>2018 - 2021</h5>
+                            <p><em>Shri Shankaracharya Technical Campus, Chhattisgarh, india</em></p>
+                            <p>My journey through the Bachelor of Technology in Information Technology at Chhattisgarh
+                                University has been a transformative and enriching experience, shaping my academic and
+                                professional trajectory. The comprehensive curriculum and hands-on approach of the
+                                program have equipped me with a solid foundation in various aspects of information
+                                technology.</p>
+                        </div>
+
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Frontend Developer</h4>
+                            <h5>2024 - present</h5>
+                            <p><em>Shree AP Visions, Bhilai, India</em></p>
+                            <ul>
+                                <li>Developed and maintain the Shree AP Visions website (shreeapvisions.com),
+                                    ensuring responsiveness, performance, and seamless user experience.</li>
+                                <li>Built interactive features using React, JavaScript,
+                                    and API integrations for seamless functionality.</li>
+                                <li>Optimized for cross-browser compatibility, accessibility, and
+                                    speed using modern web development practices.</li>
+                                <li>Utilized debugging tools and performance monitoring
+                                    to enhance functionality and efficiency.</li>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Associate Account Manager – Service Delivery Operations</h4>
+                            <h5>07/2024-12/2024</h5>
+                            <p><em>Sutherland, Hyderabad, India</em></p>
+                            <ul>
+                                <li>Handled 30+ daily client interactions, resolving remittance inquiries and
+                                    transaction issues.</li>
+                                <li>Ensured compliance with financial regulations while delivering seamless customer
+                                    support.</li>
+                                <li>Maintained detailed documentation to enhance service quality and workflow
+                                    optimization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <!-- <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Frontend Developer</h4>
+                            <h5>2024 - present</h5>
+                            <p><em>Shree AP Visions, Bhilai, India</em></p>
+                            <ul>
+                                <li>Developed and maintain the Shree AP Visions website (shreeapvisions.com),
+                                    ensuring responsiveness, performance, and seamless user experience.</li>
+                                <li>Built interactive features using React, JavaScript, 
+                                    and API integrations for seamless functionality.</li>
+                                <li>Optimized for cross-browser compatibility, accessibility, and
+                                    speed using modern web development practices.</li>
+                                <li>Utilized debugging tools and performance monitoring 
+                                    to enhance functionality and efficiency.</li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="resume-item">
+                            <h4>Associate Account Manager – Service Delivery Operations</h4>
+                            <h5>07/2024-12/2024</h5>
+                            <p><em>Sutherland, Hyderabad, India</em></p>
+                            <ul>
+                                <li>Handled 30+ daily client interactions, resolving remittance inquiries and transaction issues.</li>
+                                <li>Ensured compliance with financial regulations while delivering seamless customer support.</li>
+                                <li>Collaborated with internal teams to analyze and resolve complex transaction issues efficiently.</li>
+                                <li>Maintained detailed documentation to enhance service quality and workflow optimization.</li>
+                            </ul>
+                        </div> -->
+
+                        <br>
+                        <br>
+                        <br>
+                        <div class="resume-item">
+                            <h4>Data Analytics Trainee</h4>
+                            <h5>04/2023-06/2024</h5>
+                            <p><em>Railworld India Pvt Ltd , Hyderabad, India</em></p>
+                            <ul>
+                                <li>Covid Impact Analysis Dashboard: Developed an interactive dashboard using
+                                    Python'sDash and Plotly for real-time pandemic data visualization.</li>
+                                <ul>
+                                    <li>Environment: PyCharm, Jupyter Notebook</li>
+                                    <li>Libraries: Numpy, Pandas, Plotly, Dash</li>
+                                    <li>Data Pre-processing: Stemming, Lemmatization, Tokenization, Stop Words</li>
+                                    <li>Features : Real-time updates, interactive graphs, and data filters for deeper
+                                        insights</li>
+                                </ul>
+                                <li>WhatsApp Chat Analyzer: Built a tool to analyze and visualize WhatsApp chat data
+                                    with Python.
+                                    <ul>
+                                        <li>Environment: PyCharm, Jupyter Notebook</li>
+                                        <li>Libraries: Pandas, Matplotlib, Seaborn, Streamlit, Urlextract</li>
+                                        <li>Data Pre-processing: URL & Emoji extraction, Stop Words, Emoji Analysis</li>
+                                        <li>Features: Visual representation of chat data, including URL and emoji
+                                            analysis</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Software Developer</h4>
+                            <h5>07/2022-03/2023</h5>
+                            <p><em>Acuvate Software Pvt Ltd , Hyderabad, India</em></p>
+                            <ul>
+                                <li>Debugged software, identified root causes, and proposed solutions to software
+                                    issues.</li>
+                                <li>Installed and configured software applications while shadowing team members to learn
+                                    new tasks.</li>
+                                <li>Developed an e-restaurant website using **React** and **SharePoint Framework**.</li>
+                                <li>Produced clean code using **HTML**, **React**, and **SharePoint Framework** for
+                                    optimized performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Resume Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                    <p>Leveraging cutting-edge technologies to build innovative solutions.</p>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <!-- Card 1: Programming Languages & Frameworks -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-code-slash skill-icon"></i></div>
+                                    <h3>Programming Languages</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-code"></i> Languages</h4>
+                                        <ul>
+                                            <!-- <li> Java</li>
+                                            <li> JavaScript</li>
+                                            <li> TypeScript</li> -->
+                                            <li> Python</li>
+                                            <li> Java</li>
+                                            <li> JavaScript</li>
+                                            <li> HTML5</li>
+                                            <li> CSS3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for other cards, updating the icons and skills accordingly -->
+
+                    <!-- Card 2: Cloud & DevOps -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-cloud skill-icon"></i></div>
+                                    <h3>Frontend &amp Backend</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-laptop"></i> Frontend</h4>
+                                        <ul>
+                                            <li> React</li>
+                                            <li> SharePoint Framework</li>
+                                            <li> Next.js</li>
+                                            <li> Tailwind CSS</li>
+                                            <li> UI/UX Optimization</li>
+                                        </ul>
+                                        <h4><i class="bi bi-server"></i> Backend</h4>
+                                        <ul>
+                                            <li> Flask</li>
+                                            <li> Dash</li>
+                                            <li> REST API Development</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Databases & Messaging -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-database skill-icon"></i></div>
+                                    <h3>Databases </h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-database"></i> Databases</h4>
+                                        <ul>
+                                            <li>MySQL</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+
+                                        <h4><i class="bi bi-bar-chart-line"></i> Data Processing & Analysis</h4>
+                                        <ul>
+                                            <li>Pandas</li>
+                                            <li>NumPy</li>
+                                        </ul>
+
+                                        <h4><i class="bi bi-graph-up"></i> Data Visualization</h4>
+                                        <ul>
+                                            <li>Plotly</li>
+                                            <li>Matplotlib</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4:  Operating Systems -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="flip-card" tabindex="0">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon"><i class="bi bi-gear skill-icon"></i></div>
+                                    <h3>Automation & Tools</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="skill-details">
+                                        <h4><i class="bi bi-tools"></i> Operating Systems</h4>
+                                        <ul>
+                                            <li> VS Code</li>
+                                            <li> Visual Studio</li>
+                                            <li> SQL ServerManagement Studio(SSMS)</li>
+                                            <li> MongoDB Compass</li>
+                                        </ul>
+                                        <h4><i class="bi bi-windows"></i> Operating Systems</h4>
+                                        <ul>
+                                            <li> Windows</li>
+                                            <li> Linux</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!-- End Skills Section -->
+
+
+        <!-- ======= Project Section ======= -->
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>Some of my recent projects</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <!-- <ul id="portfolio-flters" class="text-center">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".web-dev">Web Development</li>
+                    <li data-filter=".data-science">Data Science</li>
+                    <li data-filter=".ui-ux">UI/UX</li>
+                </ul> -->
+
+                <div class="row justify-content-center portfolio-container">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item web-dev col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets/img/testimonials/website _apvisio.png"
+                                alt="Screenshot of redesigned company website for Shree APvision"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">Company Website - Shree APvision</h5>
+                                <p class="card-text">HTML, CSS, JavaScript, SEO Optimization</p>
+                                <p class="card-text">Shree AP Visions is a sleek, responsive website showcasing services
+                                    and
+                                    portfolio with interactive filtering, lightbox previews, smooth animations, and
+                                    SEO optimization for enhanced visibility </p>
+                                <div class="card-footer">
+                                    <a href="https://shreeapvisions.com/" class="btn btn-primary  btn-sm"
+                                        target="_blank">View Demo</a>
+                                    <a href="#" class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-item data-science col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets/img/testimonials/covid.png"
+                                alt="COVID-19 Impact Analysis Dashboard screenshot"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">COVID-19 Impact Analysis Dashboard</h5>
+                                <p class="card-text">Python, Dash, Plotly, Pandas</p>
+                                <p class="card-text">A dynamic real-time data visualization tool tracking India’s COVID
+                                    trends.
+                                    It offers interactive graphs, daily updates, and in-depth insights through
+                                    bar charts, line graphs, and pie charts for comprehensive analysis.</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/akanshakaduskar/covid19-dashboard?tab=readme-ov-file"
+                                        class="btn btn-primary  btn-sm" target="_blank">View Demo</a>
+                                    <a href="https://github.com/akanshakaduskar/covid19-dashboard?tab=readme-ov-file"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-item data-science col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets/img/testimonials/whtsupchatanalyser.png"
+                                alt="WhatsApp Chat Analyzer preview"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">WhatsApp Chat Analyzer</h5>
+                                <p class="card-text">Python, Pandas, Seaborn, Streamlit</p>
+                                <br>
+                                <p class="card-text">A WhatsApp chat analysis tool that processes and visualizes chat
+                                    data, extracting
+                                    timestamps, users, messages, and media. It provides insights on top participants,
+                                    active hours, and message trends with interactive charts.</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/akanshakaduskar/WhatsappChat-Analysis"
+                                        class="btn btn-primary  btn-sm" target="_blank">View Demo</a>
+                                    <a href="https://github.com/akanshakaduskar/WhatsappChat-Analysis"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4-->
+                    <div class="portfolio-item web-dev col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets\img\testimonials\gadgetheaven.png" alt="Gadget Heaven E-commerce Website"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">Gadget Heaven E-commerce Website</h5>
+                                <p class="card-text">React, Vite, Tailwind CSS, JavaScript</p>
+                                <p class="card-text">A fully responsive and dynamic e-commerce platform designed for
+                                    gadget shopping.
+                                    The website includes interactive product listings, star-based ratings, smooth
+                                    navigation,
+                                    and notifications for actions such as adding items to the cart.</p>
+
+                                <div class="card-footer">
+                                    <a href="https://batch10-assignment-8.netlify.app/" class="btn btn-primary  btn-sm"
+                                        target="_blank">View Demo</a>
+                                    <a href="https://github.com/akanshakaduskar/Gadget-heaven-ecommerce-website"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="portfolio-item web-dev col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets\img\testimonials\Website_maharaja.png" alt="E-Restaurant Website preview"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">E-Restaurant Website</h5>
+                                <p class="card-text">React, TypeScript, HTML, CSS, Javascript</p>
+                                <p class="card-text"> A responsive and dynamic restaurant website featuring an
+                                    interactive menu,
+                                    online ordering, real-time availability, secure payments, and a sleek, user-friendly
+                                    design with smooth animations for an enhanced dining experience. </p>
+
+                                <div class="card-footer">
+                                    <a href="https://akanshakaduskar.github.io/maharaja-e-restaurant/"
+                                        class="btn btn-primary  btn-sm" target="_blank">View Demo</a>
+                                    <a href="https://akanshakaduskar.github.io/maharaja-e-restaurant/"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="portfolio-item web-dev col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets\img\testimonials\task_manager.png" alt="Task Manager website"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">Task Manager - Full Stack App</h5>
+                                <p class="card-text">React, Node.js, Express, MongoDB, Redux, Tailwind CSS</p>
+                                <p class="card-text">
+                                    A full-stack task management app with user authentication, profile management, and
+                                    task CRUD features.
+                                    Built with React and Node.js, it includes JWT auth, Redux state management, and
+                                    responsive Tailwind UI.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/akanshakaduskar/task-management-main"
+                                        class="btn btn-primary  btn-sm" target="_blank">View Demo</a>
+                                    <a href="https://github.com/akanshakaduskar/task-management-main"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="portfolio-item web-dev col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets\img\testimonials\Google-doc-clone.png" alt=" Google Docs Clone"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">Google Docs Clone</h5>
+                                <p class="card-text">React.js, Material-UI, Socket.io, and MongoDB </p>
+                                <p class="card-text">
+                                    A real-time collaborative document editor that allows multiple users to edit a
+                                    document simultaneously
+                                    with instant updates. Built with modern web technologies,
+                                    it ensures smooth collaboration and efficient document management. </p>
+
+                                <div class="card-footer">
+                                    <a href="https://github.com/akanshakaduskar/GOOGLE-DOCS-CLONE?tab=readme-ov-file"
+                                        class="btn btn-primary  btn-sm" target="_blank">View Demo</a>
+                                    <a href="https://github.com/akanshakaduskar/GOOGLE-DOCS-CLONE?tab=readme-ov-file"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8 -->
+                    <div class="portfolio-item web-dev col-lg-3 col-md-6 md-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img src="assets\img\testimonials\order-form.png" alt=" Order Form"
+                                class="w-full h-full object-cover transition-transform hover:scale-105" />
+                            <div class="card-body">
+                                <h5 class="card-title">Order Form</h5>
+                                <p class="card-text">HTML, CSS, and JavaScript</p>
+                                <p class="card-text">
+
+                                    A simple and interactive order form designed to collect shipping information with
+                                    real-time validation.
+                                    It features auto-capitalization for names, numeric-only input for phone and Zip Code
+                                    fields, and dropdowns for
+                                    selecting state, district, and city and user-friendly data entry.
+                                </p>
+
+                                <div class="card-footer">
+                                    <a href="https://github.com/akanshakaduskar/Order-Form?tab=readme-ov-file"
+                                        class="btn btn-primary  btn-sm" target="_blank">View Demo</a>
+                                    <a href="https://github.com/akanshakaduskar/Order-Form?tab=readme-ov-file"
+                                        class="btn btn-info  btn-sm" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- End project Section  -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p>Proficient in a diverse set of technologies, I offer a comprehensive range of services to cater
+                        to various needs. My key services include:</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+                        <div class="icon"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="title"><a href="#">Software Development</a></h4>
+                        <p class="description">Building robust and scalable software solutions using technologies like
+                            Java, Spring Boot, and more.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-phone"></i></div>
+                        <h4 class="title"><a href="#">Mobile Development</a></h4>
+                        <p class="description">Creating mobile applications for seamless user experiences on iOS and
+                            Android platforms.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-laptop"></i></div>
+                        <h4 class="title"><a href="#">Web Development</a></h4>
+                        <p class="description">Designing and developing responsive web applications with a focus on
+                            user-centric design.</p>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-cloud"></i></div>
+                        <h4 class="title"><a href="#">Cloud Services</a></h4>
+                        <p class="description">Utilizing cloud platforms such as AWS and Azure for scalable and reliable
+                            infrastructure.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon"><i class="bi bi-tools"></i></div>
+                        <h4 class="title"><a href="#">DevOps Consulting</a></h4>
+                        <p class="description">Implementing DevOps practices to enhance development and deployment
+                            efficiency.</p>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon"><i class="bi bi-puzzle"></i></div>
+                        <h4 class="title"><a href="#">API Design</a></h4>
+                        <p class="description">Crafting robust APIs and implementing design patterns for seamless
+                            integration.</p>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="700">
+                        <div class="icon"><i class="bi bi-cloud-check"></i></div>
+                        <h4 class="title"><a href="#">Cloud Migration</a></h4>
+                        <p class="description">Migrating applications and data to the cloud for improved scalability and
+                            flexibility.</p>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="800">
+                        <div class="icon"><i class="bi bi-shield-lock"></i></div>
+                        <h4 class="title"><a href="#">Security Consulting</a></h4>
+                        <p class="description">Implementing security best practices in software applications.</p>
+                    </div>
+                </div>
+                <!-- Additional Services Go Here -->
+            </div>
+
+            </div>
+        </section><!-- End Services Section -->
+
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                    <p>Here's what others have to say about working with me:</p>
+                </div>
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item" data-aos="fade-up">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Its always been great collaborating with Akansha.
+                                    She is very energetic and always ready for new challenges.
+                                    Her problem-solving skills and fast learning capability make her stand out of crowd.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <h3>Ashish Kadu</h3>
+                                <h4>Digital Marketing Manager</h4>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    I worked with Akansha Kaduskar on a 3-month Ed-Tech project using React, Vite, and
+                                    SharePoint. Her strong technical skills, creative thinking, and team spirit greatly
+                                    contributed to the project’s success. She delivered innovative solutions and a
+                                    polished UI/UX, leaving the client highly satisfied. I highly recommend her for her
+                                    technical excellence and collaborative nature.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <h3>Sanjay Vaishnaw</h3>
+                                <h4>Developer</h4>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Akansha Kaduskar is an exceptionally talented developer with a keen eye for detail.
+                                    Her expertise in Flask, Dash, and data visualization tools like Plotly and
+                                    Matplotlib has been invaluable in our projects.
+                                    Ssignificantly contributed to our project's success.
+                                    I eagerly anticipate working
+                                    with her again in the
+                                    future.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <h3>Naveen Undri</h3>
+                                <h4>Colleague</h4>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Akansha's dedication to customer satisfaction is outstanding.
+                                    She handles complex customer queries with patience and efficiency, ensuring a
+                                    seamless experience for users.
+                                    Her problem-solving skills and ability to work under pressure make her an asset to
+                                    any service-oriented team.
+                                    Any team would be lucky to have her!
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <h3>Maganti Raghav</h3>
+                                <h4>Manager</h4>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Akansha's commitment to high-quality software is unmatched. Her expertise in React
+                                    tools and Sharepoint Framework
+                                    I look forward to partnering with her again in the future.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <h3>Anubhuti Dhruw</h3>
+                                <h4>Colleague</h4>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End Testimonials Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p> I'm currently open to new opportunities and collaborations. Whether you have a question,
+                        a project idea, or just want to connect, feel free to reach out!
+                        you! </p>
+                </div>
+
+                <div class="row" data-aos="fade-in">
+
+                    <div class="col-lg-11 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>Bhilai, Chhattisgarh, India</p>
+                            </div>
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>akanshakaduskar@gmail.com </p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>+91 99261 54707</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="3" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>akanshakaduskar</span></strong>
+            </div>
+        </div>
+    </footer><!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
